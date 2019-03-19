@@ -50,7 +50,7 @@ You should see a view where you can create and list score objects.
 
 `cd scoreboard/scoreboard-ui`
 
-2. Install packages needed by front-end:
+2. Install packages needed by the front-end:
 
 `npm install`
 
@@ -62,4 +62,4 @@ You should see a view where you can create and list score objects.
 
 `http://localhost:3000`
 
-Front-end and back-end are now up and running. You should be able to add scores and they should be listed in a list, and you can sort the list both by name and by score by clicking the corresponding title.
+Front-end and back-end are now up and running. You should be able to add scores and they should be listed in a list. You can sort the list both by name and by score by clicking the corresponding title.
