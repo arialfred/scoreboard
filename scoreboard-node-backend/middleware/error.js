@@ -1,6 +1,10 @@
 const { logger } = require('../startup/logging');
 
-module.exports = function(err, req, res, next){
-    logger.error(err.message, err);
-    res.status(500).send('Server error.');
+module.exports = function(err, req, res, next) {
+    if (err) {
+        logger.error(err.message, err);
+        return res.status(500).send('Server error.');
+    } else {
+        next();
+    }
 }
