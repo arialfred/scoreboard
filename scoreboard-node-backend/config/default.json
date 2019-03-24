@@ -1,0 +1,4 @@
+{
+  "port": 8000,
+  "database": "../scoreboard/db.sqlite3"
+}
