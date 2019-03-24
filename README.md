@@ -2,47 +2,61 @@
 
 ## Prerequisites
 
-Back-end: Python 3, Pipenv
+Back-end: Python 3, Pipenv and/or Node.js
 
-Front-end: Node.js, npm
+Front-end: Node.js
 
 ## Installation
 
-### Back-end
-
-1. Clone the repository:
+Clone the repository:
 
 `git clone https://github.com/arialfred/scoreboard.git`
 
-2. Move to the back-end project folder:
+### Back-end implemented with Python and Django
+
+1. Move to the back-end project folder:
 
 `cd scoreboard/scoreboard`
 
-3. Create virtual environment with pipenv:
+2. Create virtual environment with pipenv:
 
 `pipenv install`
 
-4. Activate virtual environment:
+3. Activate virtual environment:
 
 `pipenv shell`
 
-5. Run database migrations:
+4. Run database migrations:
 
 `python3 manage.py migrate`
 
-6. If you want, create superuser for admin interface:
+5. If you want, create superuser for admin interface:
 
 `python3 manage.py createsuperuser`
 
-7. Start the server:
+6. Start the server:
 
 `python3 manage.py runserver`
 
-8. To check that back-end is up and running, start the web browser to go to the following url:
+7. To check that back-end is up and running, start the web browser to go to the following url:
 
 `http://localhost:8000/scoreboard/api/scores`
 
 You should see a view where you can create and list score objects.
+
+### Alternative back-end implemented with Node.js
+
+1. From the project root folder, move to the back-end project folder:
+
+`cd scoreboard/scoreboard-node-backend`
+
+2. Install packages needed by the back-end:
+
+`npm install`
+
+3. Start the server:
+
+`npm start`
 
 ### Front-end
 
